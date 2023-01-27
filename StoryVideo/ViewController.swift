@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import AVKit
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var player:VideoPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+        player.playVideoWithFileName("sample.mp4", ofType: "mp4")
 
+    }
 
 }
 
